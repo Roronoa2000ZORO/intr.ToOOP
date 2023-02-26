@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 
 using std::cin;
 using std::cout;
@@ -7,9 +7,9 @@ using std::swap;
 
 class Fraction
 {
-	int integer;		//целая часть
-	int numerator;		//числитель
-	int denominator;	//знаменатель
+	int integer;		//С†РµР»Р°СЏ С‡Р°СЃС‚СЊ
+	int numerator;		//С‡РёСЃР»РёС‚РµР»СЊ
+	int denominator;	//Р·РЅР°РјРµРЅР°С‚РµР»СЊ
 public:
 	int get_integer()const
 	{
@@ -102,7 +102,7 @@ public:
 	}
 	Fraction inverted()const
 	{
-		Fraction inverted = *this;	//копируем объект
+		Fraction inverted = *this;	//РєРѕРїРёСЂСѓРµРј РѕР±СЉРµРєС‚
 		inverted.to_improper();
 		std::swap(inverted.numerator, inverted.denominator);
 		return inverted;
@@ -135,8 +135,8 @@ Fraction operator*(Fraction left, Fraction right)
 	);
 	result.to_proper();
 	return result;*/
-	//создаем временный безымянный объект, и сразу же возвращаем его на место вызова.
-	//Временные безымянные объекты существуют только в пределах одного выражения (до ;)
+	//СЃРѕР·РґР°РµРј РІСЂРµРјРµРЅРЅС‹Р№ Р±РµР·С‹РјСЏРЅРЅС‹Р№ РѕР±СЉРµРєС‚, Рё СЃСЂР°Р·Сѓ Р¶Рµ РІРѕР·РІСЂР°С‰Р°РµРј РµРіРѕ РЅР° РјРµСЃС‚Рѕ РІС‹Р·РѕРІР°.
+	//Р’СЂРµРјРµРЅРЅС‹Рµ Р±РµР·С‹РјСЏРЅРЅС‹Рµ РѕР±СЉРµРєС‚С‹ СЃСѓС‰РµСЃС‚РІСѓСЋС‚ С‚РѕР»СЊРєРѕ РІ РїСЂРµРґРµР»Р°С… РѕРґРЅРѕРіРѕ РІС‹СЂР°Р¶РµРЅРёСЏ (РґРѕ ;)
 	return Fraction
 	(
 		left.get_numerator() * right.get_numerator(),

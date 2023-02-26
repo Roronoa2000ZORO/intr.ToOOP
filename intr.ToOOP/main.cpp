@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 //using namespace std;
 using std::cin;
 using std::cout;
@@ -71,8 +71,8 @@ public:
 	}
 	Point& operator++(int) { // Postfix increment
 
-		Point old = *this; //сохраняем стврое значение
-		// Изменяем объект
+		Point old = *this; //СЃРѕС…СЂР°РЅСЏРµРј СЃС‚РІСЂРѕРµ Р·РЅР°С‡РµРЅРёРµ
+		// РР·РјРµРЅСЏРµРј РѕР±СЉРµРєС‚
 		x++;
 		y++;
 		return old;
@@ -118,7 +118,7 @@ int main() {
 #endif // STRUCT_POINT
 
 #ifdef CONTRUCTORS_CHECK
-	Point A;		//Здесь вызывается конструктор по умолчанию (Default constructor)
+	Point A;		//Р—РґРµСЃСЊ РІС‹Р·С‹РІР°РµС‚СЃСЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ (Default constructor)
 //A.set_x(2);
 //A.set_y(3);
 	cout << A.get_x() << "\t" << A.get_y() << endl;
@@ -152,13 +152,13 @@ int main() {
 	Point B(4, 5);
 	B.print();
 	cout << delimiter << endl;
-	cout << "Расстояние от точки A до точки B:" << A.distance(B) << endl;
+	cout << "Р Р°СЃСЃС‚РѕСЏРЅРёРµ РѕС‚ С‚РѕС‡РєРё A РґРѕ С‚РѕС‡РєРё B:" << A.distance(B) << endl;
 	cout << delimiter << endl;
-	cout << "Расстояние от точки B до точки A:" << B.distance(A) << endl;
+	cout << "Р Р°СЃСЃС‚РѕСЏРЅРёРµ РѕС‚ С‚РѕС‡РєРё B РґРѕ С‚РѕС‡РєРё A:" << B.distance(A) << endl;
 	cout << delimiter << endl;
-	cout << "Расстояние между точками A и B:  " << distance(A, B) << endl;
+	cout << "Р Р°СЃСЃС‚РѕСЏРЅРёРµ РјРµР¶РґСѓ С‚РѕС‡РєР°РјРё A Рё B:  " << distance(A, B) << endl;
 	cout << delimiter << endl;
-	cout << "Расстояние между точками B и A:  " << distance(B, A) << endl;
+	cout << "Р Р°СЃСЃС‚РѕСЏРЅРёРµ РјРµР¶РґСѓ С‚РѕС‡РєР°РјРё B Рё A:  " << distance(B, A) << endl;
 	cout << delimiter << endl;
 #endif // DISTANCE_CHECK
 
